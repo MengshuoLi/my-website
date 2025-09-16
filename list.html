@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>静态图片页</title>
+  <style>
+    /* 将图片在页面中居中显示，适配各种屏幕尺寸 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #0b0b0b; /* 深色背景，更衬托图片 */
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* 保持比例完整显示 */
+      display: block;
+      border-radius: 16px; /* 可按需去掉圆角 */
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 将下面的 your-image.jpg 替换为你的图片文件路径或网络地址 -->
+    <img src="111.jpg" alt="list" />
+  </div>
+</body>
+</html>
